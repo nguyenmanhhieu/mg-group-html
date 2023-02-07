@@ -1,0 +1,118 @@
+@import "../vendor/bootstrap.min.css";
+@import "../vendor/fontawesome6.2/css/all.css";
+@import "../vendor/swiper-bundle.min.css";
+@import "../vendor/menu-clean.css";
+@import "../common/default";
+@import "../common/variables";
+@import "../common/header";
+@import "../common/footer";
+@import "slide-main";
+@import "box-category-h";
+@import "utils";
+
+.banner {
+  position: relative;
+  padding-top: 43%;
+
+  @media @max767 {
+    padding-top: 55%;
+  }
+
+  &-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../../image/detail_mp_group_news/mp-group-head-news.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.news {
+  &-header {
+    padding-top: 1em;
+    padding-bottom: 1.25em;
+    font-size: 4.35vw;
+
+    @media @max767 {
+      font-size: 13vw;
+      padding-top: 0.5em;
+      padding-bottom: 0.75em;
+    }
+  }
+
+  &-title {
+    font-size: inherit;
+  }
+}
+
+.new {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding-left: 0;
+
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 3vw;
+    }
+  }
+
+  &-item {
+    width: 38.4vw;
+    padding-bottom: 5.5vw;
+    font-size: 1.83vw;
+
+    @media @max575 {
+      width: 100%;
+      padding-inline: 2rem;
+      font-size: 1.375rem;
+      aspect-ratio: unset;
+    }
+
+    &-thumb {
+      aspect-ratio: 1.527;
+    }
+
+    &-image {
+      max-height: 100%;
+    }
+
+    &-title {
+      font-size: 1em;
+    }
+
+    &-time,
+    &-desc {
+      font-size: 0.72em;
+    }
+
+    &-title,
+    &-time,
+    &-desc,
+    &-link {
+      margin-top: 0.9em;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.36em;
+      width: 11.14em;
+      border-radius: 16px;
+      border: 1px solid #747474;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &-link:hover {
+      color: inherit;
+    }
+  }
+}

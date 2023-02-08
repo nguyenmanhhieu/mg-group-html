@@ -24,20 +24,24 @@
   max-width: 79.6vw;
   margin-inline: auto;
 
+  @media @max767 {
+    max-width: unset;
+    padding-inline: var(--mobile-padding);
+  }
+
   &-header {
     padding-top: 1em;
     padding-bottom: 1.25em;
     font-size: 4.35vw;
 
     @media @max767 {
-      font-size: 13vw;
-      padding-top: 0.5em;
-      padding-bottom: 0.75em;
+      font-size: 8vw;
     }
   }
 
   &-headline {
     font-size: inherit;
+    margin-bottom: 0;
   }
 
   &-sub-headline {
@@ -54,7 +58,6 @@
   &-paragraph {
     margin-top: 0.9em;
     line-height: 1.2;
-    word-spacing: 2px;
   }
 
   &-row {
@@ -65,11 +68,21 @@
     &:last-child .about-us-figure {
       margin-top: 2.5em;
     }
+
+    @media @max767 {
+      flex-wrap: wrap;
+    }
   }
 
   &-column {
-    width: 38.4vw;
     font-size: 1.83vw;
+    flex-grow: 0;
+    flex-basis: 50%;
+
+    @media @max767 {
+      flex-basis: 100%;
+      font-size: 4vw;
+    }
   }
 
   &-figcaption {

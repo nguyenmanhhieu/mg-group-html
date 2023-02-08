@@ -1,0 +1,83 @@
+@import "../vendor/bootstrap.min.css";
+@import "../vendor/fontawesome6.2/css/all.css";
+@import "../vendor/swiper-bundle.min.css";
+@import "../vendor/menu-clean.css";
+@import "../common/default";
+@import "../common/variables";
+@import "../common/header";
+@import "../common/footer";
+@import "utils";
+
+.banner {
+  aspect-ratio: 2.31;
+
+  @media @max767 {
+    aspect-ratio: 2;
+  }
+
+  &-image {
+    object-fit: cover;
+  }
+}
+
+.about-us {
+  max-width: 79.6vw;
+  margin-inline: auto;
+
+  &-header {
+    padding-top: 1em;
+    padding-bottom: 1.25em;
+    font-size: 4.35vw;
+
+    @media @max767 {
+      font-size: 13vw;
+      padding-top: 0.5em;
+      padding-bottom: 0.75em;
+    }
+  }
+
+  &-headline {
+    font-size: inherit;
+  }
+
+  &-sub-headline {
+    font-weight: 700;
+    font-size: 1em;
+  }
+
+  &-paragraph,
+  &-figcaption {
+    font-size: 0.72em;
+    margin-top: 0.45em;
+  }
+
+  &-paragraph {
+    margin-top: 0.9em;
+    line-height: 1.2;
+    word-spacing: 2px;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: center;
+    column-gap: 3vw;
+
+    &:last-child .about-us-figure {
+      margin-top: 2.5em;
+    }
+  }
+
+  &-column {
+    width: 38.4vw;
+    font-size: 1.83vw;
+  }
+
+  &-figcaption {
+    color: var(--dark-6);
+  }
+
+  &-topo {
+    margin-top: 6.3vw;
+    margin-bottom: 9.15vw;
+  }
+}

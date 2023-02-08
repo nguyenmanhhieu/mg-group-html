@@ -8,22 +8,14 @@
 @import "../common/footer";
 
 .banner {
-  position: relative;
-  padding-top: 43%;
+  aspect-ratio: 2.31;
 
   @media @max767 {
-    padding-top: 55%;
+    aspect-ratio: 2;
   }
 
   &-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url(../../image/detail_mp_group_news/mp-group-head-news.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
   }
 }
 

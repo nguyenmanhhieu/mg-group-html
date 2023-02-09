@@ -1,27 +1,6 @@
-@import "../vendor/bootstrap.min.css";
-@import "../vendor/fontawesome6.2/css/all.css";
-@import "../vendor/swiper-bundle.min.css";
-@import "../vendor/menu-clean.css";
-@import "../common/default";
-@import "../common/variables";
-@import "../common/header";
-@import "../common/footer";
-@import "slide-main";
-@import "utils";
-@import "./grid.css";
-
-
-
-// html{
-//   font-size: 62.5%;
-// }
-
-
-
-.banner-Detail-Kolle-Zoo{
+.banner-Detail-Kolle-Zoo {
   position: relative;
   padding-top: 43%;
- 
 
   @media @max767 {
     padding-top: 55%;
@@ -38,62 +17,57 @@
     background-size: cover;
     background-position: center;
   }
-
-  
-
 }
 
-.Detail-Kolle-Zoo-header-main{
+.Detail-Kolle-Zoo-header-main {
   margin: 3.5vh auto 4.1vh auto;
   width: 33vw;
-  
-  &__images{
+
+  &__images {
     width: 100%;
     object-fit: cover;
   }
 }
 
-.Detail-Kolle-Zoo{
-
-  &-title{
+.Detail-Kolle-Zoo {
+  &-title {
     text-align: center;
 
-    &-post{
+    &-post {
       font-size: 5.8vw;
-      font-weight: 400px;
       font-family: "BebasNeue", sans-serif;
     }
   }
 
-  &-origin{
+  &-origin {
     max-width: 80vw;
     display: flex;
     margin: 0 auto;
 
-    &-post-images{
+    &-post-images {
       max-width: 70vw;
       max-height: 47vw;
       overflow: hidden;
       margin: 4.1vw auto 5.5vw auto;
 
-      &__child{
+      &__child {
         width: 100%;
         object-fit: cover;
       }
     }
-    &__left{
+    &__left {
       max-width: 38vw;
       margin-right: 1.5vw;
     }
 
-    &-title__left{
+    &-title__left {
       font-size: 1.7vw;
       font-family: "RobotoSlab", sans-serif;
       font-weight: bold;
       color: #999999;
     }
 
-    &-desc__left{
+    &-desc__left {
       font-size: 1vw;
       font-family: "RobotoSlab", sans-serif;
       color: #999999;
@@ -101,11 +75,11 @@
       text-align: justify;
     }
 
-    &__right{
+    &__right {
       max-width: 38vw;
       margin-left: 1.5vw;
     }
-    &-title__right{
+    &-title__right {
       font-size: 1.7vw;
       font-family: "RobotoSlab", sans-serif;
       font-weight: bold;
@@ -113,95 +87,94 @@
       margin-top: 3vw;
     }
 
-    &-desc__right{
+    &-desc__right {
       font-size: 1vw;
       font-family: "RobotoSlab", sans-serif;
       color: #999999;
       text-align: justify;
     }
 
-    &-desc__right:not:first-child{
+    &-desc__right:not:first-child {
       margin-top: 2.3vw;
     }
 
-    &-desc-images-left{
+    &-desc-images-left {
       width: 38vw;
       height: 57vw;
       overflow: hidden;
       margin-top: 3.4vw;
 
-      &__child{
+      &__child {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
 
-    &-desc-images-right{
+    &-desc-images-right {
       width: 38vw;
       height: 25.4vw;
       overflow: hidden;
       margin-top: 3.4vw;
 
-      &__child{
+      &__child {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
   }
-   &-form{
+  &-form {
     margin-top: 6.4vw;
     width: 100%;
     height: 64vw;
     background-color: #aeca0e;
 
-   
-    &-infor:not(:first-child){
+    &-infor:not(:first-child) {
       margin-left: 3.6vw;
     }
 
-    &-user{
+    &-user {
       max-width: 79.6vw;
       max-height: 50vw;
       margin: 0 auto;
 
-      &-input{
+      &-input {
         display: flex;
         margin-bottom: 2vw;
       }
     }
 
-    &-infor-user{
+    &-infor-user {
       font-size: 1.8vw;
       font-family: "RobotoSlab", sans-serif;
       margin-bottom: 1vw;
     }
 
-    &-box-user{
+    &-box-user {
       width: 38vw;
       height: 5vw;
       border: none;
       border-radius: 20px;
       padding: 20px 20px;
-      &[type="text"]{
+      &[type="text"] {
         font-size: 28px;
       }
     }
 
-    &-box-note{
+    &-box-note {
       width: 100%;
       height: 11.8vw;
       border: none;
       border-radius: 20px;
       margin-bottom: 3.75vw;
-      &[type="text"]{
-        padding: 5px 20px;  
+      &[type="text"] {
+        padding: 5px 20px;
         font-size: 28px;
       }
     }
 
-    &-header{
+    &-header {
       font-size: 4.2vw;
       text-align: center;
       font-family: "BebasNeue", sans-serif;
@@ -209,11 +182,11 @@
       margin-bottom: 5vw;
     }
 
-    &__click{
+    &__click {
       position: relative;
     }
 
-    &__submit{
+    &__submit {
       width: 24.6vw;
       height: 5vw;
       background-color: black;
@@ -226,28 +199,27 @@
       margin-left: auto;
       right: 0;
 
-     &-grey {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 55%;
-      width: 100%;
-      background-color: #333333;
-      z-index: 10;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-     }
+      &-grey {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 55%;
+        width: 100%;
+        background-color: #333333;
+        z-index: 10;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
 
-     &-content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: 11;
-      line-height: 5vw;
-     }
+      &-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 11;
+        line-height: 5vw;
+      }
     }
   }
 }
-

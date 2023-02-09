@@ -6,29 +6,28 @@
 @import "../common/variables";
 @import "../common/header";
 @import "../common/footer";
-@import "utils";
 
 .banner {
-  position: relative;
-  padding-top: 43%;
+  aspect-ratio: 2.31;
 
   @media @max767 {
-    padding-top: 55%;
+    aspect-ratio: 2;
   }
 
   &-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url(../../image/detail_mp_group_news/mp-group-head-news.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
   }
 }
 
-.news {
+.new {
+  max-width: 79.6vw;
+  margin-inline: auto;
+
+  @media @max767 {
+    max-width: unset;
+    padding-inline: var(--mobile-padding);
+  }
+
   &-header {
     padding-top: 1em;
     padding-bottom: 1.25em;
@@ -36,8 +35,6 @@
 
     @media @max767 {
       font-size: 8vw;
-      padding-top: 0.5em;
-      padding-bottom: 0.75em;
     }
   }
 
@@ -45,33 +42,35 @@
     font-size: inherit;
     margin-bottom: 0;
   }
-}
 
-.new {
   &-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
     padding-left: 0;
 
     &-row {
       display: flex;
-      flex-wrap: wrap;
+      justify-content: center;
       column-gap: 3vw;
+
+      @media @max767 {
+        flex-wrap: wrap;
+      }
     }
   }
 
   &-item {
-    width: 38.4vw;
+    flex-grow: 0;
+    flex-basis: 50%;
     padding-bottom: 5.5vw;
     font-size: 1.83vw;
 
-    @media @max575 {
-      width: 100%;
-      padding: 0 2rem 2rem;
-      font-size: 1.375rem;
-      aspect-ratio: unset;
+    @media @max767 {
+      flex-basis: 100%;
+      font-size: 4vw;
+      margin-bottom: 0.5rem;
+    }
+
+    &-title {
+      font-size: 1em;
     }
 
     &-thumb {
@@ -80,10 +79,6 @@
 
     &-image {
       max-height: 100%;
-    }
-
-    &-title {
-      font-size: 1em;
     }
 
     &-time,
@@ -115,5 +110,3 @@
     }
   }
 }
-
-

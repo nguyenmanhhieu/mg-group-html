@@ -14,12 +14,12 @@
     aspect-ratio: 2;
   }
 
-  &-image {
+  &__image {
     object-fit: cover;
   }
 }
 
-.about-us {
+.new-detail {
   max-width: 79.6vw;
   margin-inline: auto;
 
@@ -28,7 +28,7 @@
     padding-inline: var(--mobile-padding);
   }
 
-  &-header {
+  &__header {
     padding-top: 1em;
     padding-bottom: 1.25em;
     font-size: 4.35vw;
@@ -38,46 +38,58 @@
     }
   }
 
-  &-headline {
+  &__headline {
     font-size: inherit;
     margin-bottom: 0;
   }
 
-  &-sub-headline {
+  &__sub-headline {
     font-weight: 700;
     font-size: 1em;
+    padding-bottom: 0.65em;
+    margin-bottom: 0;
+
+    &:not(:first-child) {
+      padding-top: 0.65em;
+    }
   }
 
-  &-paragraph,
-  &-figcaption {
+  &__figure {
+    padding-bottom: 2em;
+  }
+
+  &__paragraph,
+  &__figcaption {
     font-size: 0.72em;
+    margin-bottom: 0;
   }
 
-  &-figcaption {
-    margin-top: 0.45em;
+  &__figcaption {
+    padding-top: 0.65em;
     color: var(--dark-6);
   }
 
-  &-paragraph {
-    margin-top: 0.9em;
+  &__paragraph {
+    padding-bottom: 0.65em;
     line-height: 1.2;
+
+    
+    &:not(:first-child) {
+      padding-top: 0.65em;
+    }
   }
 
-  &-row {
+  &__row {
     display: flex;
     justify-content: center;
     column-gap: 3vw;
-
-    &:last-child .about-us-figure {
-      margin-top: 2.5em;
-    }
 
     @media @max767 {
       flex-wrap: wrap;
     }
   }
 
-  &-column {
+  &__column {
     font-size: 1.83vw;
     flex-grow: 0;
     flex-basis: 50%;
@@ -86,10 +98,5 @@
       flex-basis: 100%;
       font-size: 4vw;
     }
-  }
-
-  &-topo {
-    margin-top: 6.3vw;
-    margin-bottom: 9.15vw;
   }
 }

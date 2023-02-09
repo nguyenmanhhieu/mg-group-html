@@ -1,25 +1,16 @@
-@import "../vendor/bootstrap.min.css";
-@import "../vendor/fontawesome6.2/css/all.css";
-@import "../vendor/swiper-bundle.min.css";
-@import "../vendor/menu-clean.css";
-@import "../common/default";
-@import "../common/variables";
-@import "../common/header";
-@import "../common/footer";
-
-.banner {
+.mp-group-new-banner {
   aspect-ratio: 2.31;
 
   @media @max767 {
     aspect-ratio: 2;
   }
 
-  &-image {
+  &__image {
     object-fit: cover;
   }
 }
 
-.new {
+.mp-group-new {
   max-width: 79.6vw;
   margin-inline: auto;
 
@@ -28,7 +19,7 @@
     padding-inline: var(--mobile-padding);
   }
 
-  &-header {
+  &__header {
     padding-top: 1em;
     padding-bottom: 1.25em;
     font-size: 4.35vw;
@@ -38,12 +29,12 @@
     }
   }
 
-  &-title {
+  &__title {
     font-size: inherit;
     margin-bottom: 0;
   }
 
-  &-list {
+  &__list {
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -51,7 +42,7 @@
     column-gap: 3vw;
   }
 
-  &-item {
+  &__item {
     flex-grow: 0;
     flex-basis: calc(50% - 1.5vw);
     padding-bottom: 5.5vw;

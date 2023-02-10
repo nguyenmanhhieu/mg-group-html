@@ -1,0 +1,92 @@
+.banner {
+  aspect-ratio: 2.31;
+
+  @media @max767 {
+    aspect-ratio: 2;
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+}
+
+.new-detail {
+  max-width: 79.6vw;
+  margin-inline: auto;
+
+  @media @max767 {
+    max-width: unset;
+    padding-inline: var(--mobile-padding);
+  }
+
+  &__header {
+    padding-top: 1em;
+    padding-bottom: 1.25em;
+    font-size: 4.35vw;
+
+    @media @max767 {
+      font-size: 8vw;
+    }
+  }
+
+  &__headline {
+    font-size: inherit;
+    margin-bottom: 0;
+  }
+
+  &__sub-headline {
+    font-weight: 700;
+    font-size: 1em;
+    padding-bottom: 0.65em;
+    margin-bottom: 0;
+
+    &:not(:first-child) {
+      padding-top: 0.65em;
+    }
+  }
+
+  &__figure {
+    padding-bottom: 2em;
+  }
+
+  &__paragraph,
+  &__figcaption {
+    font-size: 0.72em;
+    margin-bottom: 0;
+  }
+
+  &__figcaption {
+    padding-top: 0.65em;
+    color: var(--dark-6);
+  }
+
+  &__paragraph {
+    padding-bottom: 0.65em;
+    line-height: 1.2;
+
+    &:not(:first-child) {
+      padding-top: 0.65em;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    column-gap: 3vw;
+
+    @media @max767 {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    font-size: 1.83vw;
+    flex-grow: 0;
+    flex-basis: 50%;
+
+    @media @max767 {
+      flex-basis: 100%;
+      font-size: 4vw;
+    }
+  }
+}

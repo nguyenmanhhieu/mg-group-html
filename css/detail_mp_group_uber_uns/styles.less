@@ -1,0 +1,86 @@
+.about-us-banner {
+  aspect-ratio: 2.31;
+
+  @media @max767 {
+    aspect-ratio: 2;
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+}
+
+.about-us {
+  max-width: 79.6vw;
+  margin-inline: auto;
+
+  @media @max767 {
+    max-width: unset;
+    padding-inline: var(--mobile-padding);
+  }
+
+  &__header {
+    padding-top: 1em;
+    padding-bottom: 1.25em;
+    font-size: 4.35vw;
+
+    @media @max767 {
+      font-size: 8vw;
+    }
+  }
+
+  &__headline {
+    font-size: inherit;
+    margin-bottom: 0;
+  }
+
+  &__sub-headline {
+    font-weight: 700;
+    font-size: 1em;
+  }
+
+  &__paragraph,
+  &__figcaption {
+    font-size: 0.72em;
+  }
+
+  &__figcaption {
+    margin-top: 0.45em;
+    color: var(--dark-6);
+  }
+
+  &__paragraph {
+    margin-top: 0.9em;
+    line-height: 1.2;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    column-gap: 3vw;
+
+    &:last-child .about-us__figure {
+      margin-top: 2.5em;
+    }
+
+    @media @max767 {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    font-size: 1.83vw;
+    flex-grow: 0;
+    flex-basis: 50%;
+
+    @media @max767 {
+      flex-basis: 100%;
+      font-size: 4vw;
+    }
+  }
+
+  &__topo {
+    margin-top: 6.3vw;
+    margin-bottom: 9.15vw;
+  }
+}

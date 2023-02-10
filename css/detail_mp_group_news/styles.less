@@ -1,78 +1,61 @@
-@import "../vendor/bootstrap.min.css";
-@import "../vendor/fontawesome6.2/css/all.css";
-@import "../vendor/swiper-bundle.min.css";
-@import "../vendor/menu-clean.css";
-@import "../common/default";
-@import "../common/variables";
-@import "../common/header";
-@import "../common/footer";
-@import "slide-main";
-@import "box-category-h";
-@import "utils";
-
-.banner {
-  position: relative;
-  padding-top: 43%;
+.mp-group-new-banner {
+  aspect-ratio: 2.31;
 
   @media @max767 {
-    padding-top: 55%;
+    aspect-ratio: 2;
   }
 
-  &-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url(../../image/detail_mp_group_news/mp-group-head-news.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  &__image {
+    object-fit: cover;
   }
 }
 
-.news {
-  &-header {
+.mp-group-new {
+  max-width: 79.6vw;
+  margin-inline: auto;
+
+  @media @max767 {
+    max-width: unset;
+    padding-inline: var(--mobile-padding);
+  }
+
+  &__header {
     padding-top: 1em;
     padding-bottom: 1.25em;
     font-size: 4.35vw;
 
     @media @max767 {
-      font-size: 13vw;
-      padding-top: 0.5em;
-      padding-bottom: 0.75em;
+      font-size: 8vw;
     }
   }
 
-  &-title {
+  &__title {
     font-size: inherit;
+    margin-bottom: 0;
   }
-}
 
-.new {
-  &-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
+  &__list {
     padding-left: 0;
-
-    &-row {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 3vw;
-    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 3vw;
   }
 
-  &-item {
-    width: 38.4vw;
+  &__item {
+    flex-grow: 0;
+    flex-basis: calc(50% - 1.5vw);
     padding-bottom: 5.5vw;
     font-size: 1.83vw;
 
-    @media @max575 {
-      width: 100%;
-      padding-inline: 2rem;
-      font-size: 1.375rem;
-      aspect-ratio: unset;
+    @media @max767 {
+      flex-basis: 100%;
+      font-size: 4vw;
+      margin-bottom: 0.5rem;
+    }
+
+    &-title {
+      font-size: 1em;
     }
 
     &-thumb {
@@ -81,10 +64,6 @@
 
     &-image {
       max-height: 100%;
-    }
-
-    &-title {
-      font-size: 1em;
     }
 
     &-time,
@@ -116,5 +95,3 @@
     }
   }
 }
-
-

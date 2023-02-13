@@ -57,7 +57,7 @@ var swiper = new Swiper(".slide-main", {
 });
 
 // Setup languages selectbox customizations
-const languagesSelect = customSelect("#languages-select");
+const languagesSelect = customSelect("#lang_choice_1");
 
 // Scroll to top
 const scrollToTopButton = document.querySelector(".back-to-top");
